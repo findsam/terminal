@@ -28,8 +28,11 @@
                 {
                     "foreground": "#C2C206",
                     "style": "plain",
-                    "template": "{{ .HEAD }}",
-                    "type": "git"
+                    "template": "({{ .HEAD }})",
+                    "type": "git",
+                    "properties": {
+                        "branch_icon": ""
+                    }
                 },
                 {
                     "foreground": "#62ED8B",
