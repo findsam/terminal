@@ -29,10 +29,7 @@
                     "foreground": "#C2C206",
                     "style": "plain",
                     "template": "{{ .HEAD }}",
-                    "type": "git",
-                    "properties": {
-                        "display_status": true
-                    }
+                    "type": "git"
                 },
                 {
                     "foreground": "#62ED8B",
