@@ -7,23 +7,8 @@
                 {
                     "foreground": "#E36464",
                     "style": "plain",
-                    "template": "~/sam ",
+                    "template": "~/sam",
                     "type": "session"
-                },
-                {
-                    "foreground": "#62ED8B",
-                    "style": "plain",
-                    "template": "➜",
-                    "type": "text"
-                },
-                {
-                    "foreground": "#56B6C2",
-                    "properties": {
-                        "style": "folder"
-                    },
-                    "style": "plain",
-                    "template": " {{ .Path }}",
-                    "type": "path"
                 },
                 {
                     "foreground": "#62ED8B",
@@ -32,16 +17,30 @@
                     "type": "text"
                 },
                 {
+                    "foreground": "#56B6C2",
+                    "properties": {
+                        "style": "folder"
+                    },
+                    "style": "plain",
+                    "template": "{{ .Path }}",
+                    "type": "path"
+                },
+                {
                     "foreground": "#C2C206",
                     "style": "plain",
-                    "template": "{{ .HEAD }} ",
+                    "template": "({{ .HEAD }})",
                     "type": "git",
-                    "powerline_symbol": "\uE0B0",
                     "properties": {
                         "display_status": true,
                         "display_stash_count": true,
                         "display_upstream_icon": true
                     }
+                },
+                {
+                    "foreground": "#62ED8B",
+                    "style": "plain",
+                    "template": " ➜ ",
+                    "type": "text"
                 }
             ],
             "type": "prompt"
