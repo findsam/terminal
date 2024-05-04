@@ -7,7 +7,7 @@
         {
           "foreground": "#E36464",
           "style": "plain",
-          "template": "@sam ",
+          "template": "~/sam ",
           "type": "session"
         },
         {
@@ -25,20 +25,22 @@
           "template": " {{ .Path }}",
           "type": "path"
         },
-        {
-          "foreground": "#D4AAFC",
+         {
+          "foreground": "#14A5AE",
+          "powerline_symbol": "\ue0b0",
           "properties": {
-            "branch_icon": ""
+            "fetch_stash_count": true,
+            "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": " <#DDB15F>git(</>{{ .HEAD }}<#DDB15F>)</>",
+          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
           "type": "git"
         },
         {
-          "foreground": "#DCB977",
+          "foreground": "#62ED8B",
           "style": "plain",
-          "template": " ",
-          "type": "status"
+          "template": " ➜",
+          "type": "text"
         }
       ],
       "type": "prompt"
