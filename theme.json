@@ -22,7 +22,7 @@
                         "style": "folder"
                     },
                     "style": "plain",
-                    "template": "{{ .Path }}",
+                    "template": "{{ .Path }} ",
                     "type": "path"
                 },
                 {
@@ -33,7 +33,7 @@
                     "properties": {
                         "display_status": true,
                         "display_stash_count": true,
-                        "display_upstream_icon": true
+                        "display_upstream_icon": false
                     }
                 },
                 {
