@@ -22,23 +22,17 @@
                         "style": "folder"
                     },
                     "style": "plain",
-                    "template": "{{ .Path }} ",
+                    "template": "{{ .Path }}",
                     "type": "path"
                 },
                 {
                     "foreground": "#C2C206",
                     "style": "plain",
-                    "template": "({{ .HEAD }})",
+                    "template": "@{{ .HEAD }} ",
                     "type": "git",
                     "properties": {
                         "branch_icon": ""
                     }
-                },
-                {
-                    "foreground": "#62ED8B",
-                    "style": "plain",
-                    "template": " ➜ ",
-                    "type": "text"
                 }
             ],
             "type": "prompt"
